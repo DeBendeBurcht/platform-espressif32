@@ -20,7 +20,7 @@
   "frameworks": [
     "arduino"
   ],
-  "name": "ESP32C5 Dev Module (WT0132C5-S6/S6U)",
+  "name": "ESP32C5",
   "upload": {
     "flash_size": "4MB",
     "maximum_ram_size": 327680,
