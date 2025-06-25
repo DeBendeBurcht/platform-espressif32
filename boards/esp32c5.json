@@ -1,1 +1,41 @@
-commit update(need new SHA)
+{
+  "build": {
+    "core": "esp32",
+    "f_cpu": "240000000L",
+    "f_flash": "80000000L",
+    "flash_mode": "qio",
+    "hwids": [
+      [
+        "0x2886",
+        "0x0048"
+      ],
+      [
+        "0x2886",
+        "0x8048"
+      ]
+    ],
+    "mcu": "esp32c5"
+  },
+  "connectivity": [
+    "wifi",
+    "bluetooth",
+    "zigbee",
+    "thread"
+  ],
+  "debug": {
+    "openocd_target": "esp32c5.cfg"
+  },
+  "frameworks": [
+    "espidf"
+  ],
+  "name": "Generic ESP32C5 Module",
+  "upload": {
+    "flash_size": "4MB",
+    "maximum_ram_size": 327680,
+    "maximum_size": 1310720,
+    "require_upload_port": true,
+    "speed": 921600
+  },
+  "url": "https://shop.wireless-tag.com/products/wt0132c6-s5-original-factory-wifi-ble-module-based-on-esp32-c6-ieee-802-15-4-802-11ax-supports-wifi-6-zigbee-thread-复制",
+  "vendor": "WirelessTag"
+}
