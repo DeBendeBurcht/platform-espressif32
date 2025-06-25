@@ -4,12 +4,17 @@
     "f_cpu": "240000000L",
     "f_flash": "80000000L",
     "flash_mode": "qio",
-    "mcu": "esp32c5",
-    "variant": "esp32c5",
-    "bootloader_addr": "0x2000",
-    "tarch": "riscv32",
-    "target": "esp",
-    "partitions": "default"
+    "hwids": [
+      [
+        "0x2886",
+        "0x0048"
+      ],
+      [
+        "0x2886",
+        "0x8048"
+      ]
+    ],
+    "mcu": "esp32c5"
   },
   "connectivity": [
     "wifi",
@@ -17,44 +22,20 @@
     "zigbee",
     "thread"
   ],
+  "debug": {
+    "openocd_target": "esp32c6.cfg"
+  },
   "frameworks": [
-    "arduino"
+    "espidf"
   ],
-  "name": "ESP32C5",
+  "name": "Generic ESP32C5 Module",
   "upload": {
     "flash_size": "4MB",
     "maximum_ram_size": 327680,
     "maximum_size": 1310720,
     "require_upload_port": true,
-    "speed": 921600,
-    "tool": "esptool_py",
-    "use_1200bps_touch": false,
-    "wait_for_upload_port": false
+    "speed": 921600
   },
-  "vendor": "Espressif",
-  "menu": {
-    "FlashSize": {
-      "4MB": {
-        "build.flash_size": "4MB",
-        "upload.maximum_size": 1310720
-      },
-      "8MB": {
-        "build.flash_size": "8MB",
-        "upload.maximum_size": 8388608
-      },
-      "16MB": {
-        "build.flash_size": "16MB",
-        "upload.maximum_size": 16777216
-      }
-    },
-    "PSRAM": {
-      "Disabled": {
-        "build.psram": "disabled"
-      },
-      "4MB": {
-        "build.psram": "enabled",
-        "build.psram_size": "4MB"
-      }
-    }
-  }
+  "url": "https://www.espressif.com/en/products/socs/esp32-c5",
+  "vendor": "WirelessTag"
 }
