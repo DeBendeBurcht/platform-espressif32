@@ -23,7 +23,7 @@
     "thread"
   ],
   "debug": {
-    "openocd_target": "esp32c6.cfg"
+    "openocd_target": "esp32c5.cfg"
   },
   "frameworks": [
     "espidf"
@@ -36,6 +36,6 @@
     "require_upload_port": true,
     "speed": 921600
   },
-  "url": "https://www.espressif.com/en/products/socs/esp32-c5",
+  "url": "https://shop.wireless-tag.com/products/wt0132c6-s5-original-factory-wifi-ble-module-based-on-esp32-c6-ieee-802-15-4-802-11ax-supports-wifi-6-zigbee-thread-复制",
   "vendor": "WirelessTag"
 }
