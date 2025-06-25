@@ -34,7 +34,7 @@
     "maximum_ram_size": 327680,
     "maximum_size": 1310720,
     "require_upload_port": true,
-    "speed": 460800
+    "speed": 921600
   },
   "url": "https://shop.wireless-tag.com/products/wt0132c6-s5-original-factory-wifi-ble-module-based-on-esp32-c6-ieee-802-15-4-802-11ax-supports-wifi-6-zigbee-thread-复制",
   "vendor": "WirelessTag"
