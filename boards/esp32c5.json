@@ -2,26 +2,59 @@
   "build": {
     "core": "esp32",
     "f_cpu": "240000000L",
+    "f_flash": "80000000L",
+    "flash_mode": "qio",
     "mcu": "esp32c5",
     "variant": "esp32c5",
-    "flash_mode": "qio",
-    "flash_freq": "80m",
-    "flash_size": "4MB",
     "bootloader_addr": "0x2000",
     "tarch": "riscv32",
     "target": "esp",
     "partitions": "default"
   },
+  "connectivity": [
+    "wifi",
+    "bluetooth",
+    "zigbee",
+    "thread"
+  ],
+  "frameworks": [
+    "arduino"
+  ],
+  "name": "ESP32C5 Dev Module (WT0132C5-S6/S6U)",
   "upload": {
+    "flash_size": "4MB",
+    "maximum_ram_size": 327680,
     "maximum_size": 1310720,
-    "maximum_data_size": 327680,
+    "require_upload_port": true,
     "speed": 921600,
     "tool": "esptool_py",
     "use_1200bps_touch": false,
     "wait_for_upload_port": false
   },
-  "frameworks": ["arduino"],
-  "name": "ESP32C5 Dev Module",
-  "platform": "espressif32",
-  "vendor": "Espressif"
+  "vendor": "Espressif",
+  "menu": {
+    "FlashSize": {
+      "4MB": {
+        "build.flash_size": "4MB",
+        "upload.maximum_size": 1310720
+      },
+      "8MB": {
+        "build.flash_size": "8MB",
+        "upload.maximum_size": 8388608
+      },
+      "16MB": {
+        "build.flash_size": "16MB",
+        "upload.maximum_size": 16777216
+      }
+    },
+    "PSRAM": {
+      "Disabled": {
+        "build.psram": "disabled"
+      },
+      "4MB": {
+        "build.psram": "enabled",
+        "build.psram_size": "4MB"
+      }
+    }
+  }
 }
