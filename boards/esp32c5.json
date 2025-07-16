@@ -1,6 +1,7 @@
 {
   "build": {
     "core": "esp32",
+    "extra_flags": "-DESP32C5 -DARDUINO_USB_MODE=1 -DARDUINO_USB_CDC_ON_BOOT=1",
     "f_cpu": "240000000L",
     "f_flash": "80000000L",
     "flash_mode": "qio",
@@ -14,7 +15,8 @@
         "0x8048"
       ]
     ],
-    "mcu": "esp32c5"
+    "mcu": "esp32c5",
+    "variant": "esp32c5"
   },
   "connectivity": [
     "wifi",
@@ -26,16 +28,17 @@
     "openocd_target": "esp32c5.cfg"
   },
   "frameworks": [
+    "arduino",
     "espidf"
   ],
   "name": "Generic ESP32C5 Module",
   "upload": {
     "flash_size": "4MB",
     "maximum_ram_size": 327680,
-    "maximum_size": 1310720,
+    "maximum_size": 4194304,
     "require_upload_port": true,
     "speed": 921600
   },
-  "url": "https://shop.wireless-tag.com/products/wt0132c6-s5-original-factory-wifi-ble-module-based-on-esp32-c6-ieee-802-15-4-802-11ax-supports-wifi-6-zigbee-thread-复制",
-  "vendor": "WirelessTag"
+  "url": "https://www.espressif.com/en/products/socs/esp32-c5",
+  "vendor": "Espressif"
 }
