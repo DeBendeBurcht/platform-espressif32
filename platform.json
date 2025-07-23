@@ -52,7 +52,6 @@
       "type": "toolchain",
       "owner": "espressif",
       "version": "~8.4.0+2021r2-patch5",
-      "optionalVersions": ["14.2.0+20241119"]
     },
     "toolchain-xtensa-esp-elf": {
       "type": "toolchain",
