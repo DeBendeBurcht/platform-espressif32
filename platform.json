@@ -32,7 +32,6 @@
   "packages": {
     "toolchain-xtensa-esp32": {
       "type": "toolchain",
-      "optional": true,
       "owner": "espressif",
       "version": "8.4.0+2021r2-patch5"
     },
@@ -42,7 +41,7 @@
       "owner": "espressif",
       "version": "8.4.0+2021r2-patch5"
     },
-    "toolchain-xtensa-esp32s3": {
+     "toolchain-xtensa-esp32s3": {
       "type": "toolchain",
       "optional": true,
       "owner": "espressif",
@@ -50,8 +49,10 @@
     },
     "toolchain-riscv32-esp": {
       "type": "toolchain",
+      "optional": false,
       "owner": "espressif",
-      "version": "~8.4.0+2021r2-patch5"
+      "version": "8.4.0+2021r2-patch5",
+      "optionalVersions": ["14.2.0+20241119"]
     },
     "toolchain-xtensa-esp-elf": {
       "type": "toolchain",
@@ -80,8 +81,8 @@
     "framework-arduinoespressif32": {
       "type": "framework",
       "optional": true,
-      "owner": "espressif",
-      "version": "https://github.com/espressif/arduino-esp32.git#3.3.0"
+      "owner": "platformio",
+      "version": "~3.20017.0"
     },
     "framework-espidf": {
       "type": "framework",
@@ -150,12 +151,5 @@
       "owner": "platformio",
       "version": "0.0.1+20241011"
     }
-  },
-  "boards": [
-    {
-      "name": "esp32c5",
-      "vendor": "Espressif",
-      "description": "Generic ESP32C5 Module"
-    }
-  ]
+  }
 }
