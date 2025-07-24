@@ -49,7 +49,7 @@
     },
     "toolchain-riscv32-esp": {
       "type": "toolchain",
-      "optional": false,
+      "optional": true,
       "owner": "espressif",
       "version": "8.4.0+2021r2-patch5",
       "optionalVersions": ["14.2.0+20241119"]
