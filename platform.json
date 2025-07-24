@@ -49,7 +49,6 @@
     },
     "toolchain-riscv32-esp": {
       "type": "toolchain",
-      "optional": true,
       "owner": "espressif",
       "version": "8.4.0+2021r2-patch5",
       "optionalVersions": ["14.2.0+20241119"]
@@ -82,7 +81,7 @@
       "type": "framework",
       "optional": true,
       "owner": "platformio",
-      "version": "~3.20017.0"
+      "version": "https://github.com/espressif/arduino-esp32.git#idf-release/v5.5"
     },
     "framework-espidf": {
       "type": "framework",
